@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "resourceGroupName": {
-            "value": "HANA-rg"
+            "value": "SAP-SID-rg"
         },
         "HANAVersion": {
             "value": "2.0 SPS06 REV61"
@@ -24,13 +24,13 @@
             "value": "no"
         },
         "ExistingNetworkRG": {
-            "value": "SharedRG"
+            "value": "SAP-Network-RG"
         },
         "HANAVNet": {
-            "value": "myVNet"
+            "value": "SAP-Network"
         },
         "HANASubnet" {
-            "value": "mySubnet"
+            "value": "SAP-PRD-DB"
         },
         "VMUserName": {
             "value": "azureadmin"
