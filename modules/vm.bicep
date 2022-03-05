@@ -262,7 +262,7 @@ resource script 'Microsoft.Compute/virtualMachines/extensions@2020-06-01' = {
     autoUpgradeMinorVersion: true
     settings: {
       fileUris: [
-        'https://raw.githubusercontent.com/1lomeno3/sap-hana-bicep/main/scripts/script.sh'
+        'https://raw.githubusercontent.com/thzandvl/sap-hana-bicep/main/scripts/script.sh'
       ]
       commandToExecute: 'sh script.sh "${HANAVersion}" "${HANASID}" "${HANANumber}" "${VMSize}" "${SAPstorage}" "${SAStoken}" "${VMUserName}" "${VMPassword}"'
     }

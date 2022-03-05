@@ -10,19 +10,20 @@ param resourceGroupLocation string = 'westeurope'
   '2.0 SPS04 REV40 (51053787)'
   '2.0 SPS05 REV56'
   '2.0 SPS06 REV60'
+  '2.0 SPS06 REV61'
 ])
-param HANAVersion string = '2.0 SPS06 REV60'
+param HANAVersion string = '2.0 SPS06 REV61'
 
 @minLength(3)
 @maxLength(3)
-param HANASID string = 'AZR'
+param HANASID string = 'HDB'
 
 @minLength(2)
 @maxLength(2)
 param HANANumber string = '00'
 
 @maxLength(13)
-param VMName string = 'hanavm'
+param VMName string = 'sap-hdb-db0'
 
 @allowed([
   'Standard_DS14_v2 (112 GB, for B1)'
