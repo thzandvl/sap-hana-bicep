@@ -2,8 +2,11 @@
     "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
+        "resourceGroupName": {
+            "value": "HANA-rg"
+        },
         "HANAVersion": {
-            "value": "2.0 SPS05 REV61"
+            "value": "2.0 SPS06 REV61"
         },
         "HANASID": {
             "value":  "HDB"
@@ -16,6 +19,9 @@
         },
         "VMType": {
             "value": "Standard_E32s_v3 (256 GB)"
+        },
+        "PublicIP": {
+            "value": "no"
         },
         "ExistingNetworkRG": {
             "value": "SharedRG"

@@ -57,7 +57,7 @@ param HANASubnetCIDR string = '10.0.0.0/26'
   'yes'
   'no'
 ])
-param PublicIP string = 'yes'
+param PublicIP string = 'no'
 
 @description('URI where SAP bits are uploaded')
 param SAPstorage string
