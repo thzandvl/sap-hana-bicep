@@ -29,6 +29,9 @@
         "HANAVNet": {
             "value": "myVNet"
         },
+        "HANASubnet" {
+            "value": "mySubnet"
+        },
         "VMUserName": {
             "value": "azureadmin"
         },
