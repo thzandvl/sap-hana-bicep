@@ -204,7 +204,7 @@ function prepareSAPBins()
     /usr/bin/wget -o ${hanapackage}.ZIP --quiet $Uri/${hanapackage}.ZIP${sas}
     unzip ${hanapackage}.ZIP  
   else
-    if [ "${hanapackage}" = "56" ] || [ "${hanapackage}" = "60"  || [ "${hanapackage}" = "61" ]
+    if [ "${hanapackage}" = "56" ] || [ "${hanapackage}" = "60" ] || [ "${hanapackage}" = "61" ]
     then
       /usr/bin/wget -O SAPCAR --quiet $Uri/SAPCAR${sas}
       /usr/bin/wget -O IMDB_SERVER20_0${hanapackage}_0-80002031.SAR --quiet $Uri/IMDB_SERVER20_0${hanapackage}_0-80002031.SAR${sas}
@@ -246,7 +246,7 @@ function installHANA()
   
   echo $VMIPADDR $VMNAME >> /etc/hosts
   
-  if [ "${hanapackage}" = "56" ] || [ "${hanapackage}" = "60"  || [ "${hanapackage}" = "61" ]
+  if [ "${hanapackage}" = "56" ] || [ "${hanapackage}" = "60" ] || [ "${hanapackage}" = "61" ]
   then
     /hana/data/sapbits/${hanapackage}/SAP_HANA_DATABASE/hdblcm -b --configfile /hana/data/sapbits/hdbinst-local.cfg
   else
